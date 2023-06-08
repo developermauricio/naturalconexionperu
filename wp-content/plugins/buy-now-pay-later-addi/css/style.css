@@ -1,0 +1,1105 @@
+/*Fonts*/
+@font-face {
+  font-family: Inter;
+  src: url(https://s3.amazonaws.com/statics.addi.com/fonts/inter/Inter-Thin.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(https://s3.amazonaws.com/statics.addi.com/fonts/inter/Inter-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(https://s3.amazonaws.com/statics.addi.com/fonts/inter/Inter-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Mallory;
+  src: url(https://s3.amazonaws.com/statics.addi.com/fonts/mallory/Mallory_Medium.ttf);
+  font-style: normal;
+}
+
+
+/* Colors */
+
+/**
+ * ADDI - UI-Foundation
+ * Do not edit directly
+ * Generated on Mon, 08 Nov 2021 13:02:23 GMT
+ */
+
+:root {
+  --color-addi-primary-active: rgb(60, 106, 240);
+  --color-addi-primary-hover: rgb(10, 57, 196);
+  --color-addi-primary-inactive: rgb(204, 221, 255);
+  --color-addi-feedback-success: rgb(0, 190, 122);
+  --color-addi-feedback-warning: rgb(239, 200, 0);
+  --color-addi-feedback-error: rgb(250, 77, 75);
+  --color-addi-feedback-info: rgb(133, 169, 255);
+  --color-addi-font-primary: rgb(24, 24, 31);
+  --color-addi-font-secondary: rgb(77, 82, 92);
+  --color-addi-font-strong: rgb(116, 119, 122);
+  --color-addi-font-hint: rgb(201, 205, 209);
+  --color-addi-font-disable: rgb(235, 236, 237);
+  --color-addi-font-over-dark: rgb(255, 255, 255);
+  --color-addi-font-action: rgb(60, 106, 240);
+  --color-addi-font-success: rgb(1, 128, 82);
+  --color-addi-font-error: rgb(204, 31, 31);
+  --color-addi-background-white: rgb(255, 255, 255);
+  --color-addi-background-soft: rgb(250, 250, 250);
+  --color-addi-background-medium: rgb(235, 236, 237);
+  --color-addi-background-hint: rgb(201, 205, 209);
+  --color-addi-background-strong: rgb(116, 119, 122);
+  --color-addi-comp-one-lighten4: rgb(250, 229, 255);
+  --color-addi-comp-one-lighten3: rgb(247, 214, 255);
+  --color-addi-comp-one-lighten2: rgb(236, 193, 247);
+  --color-addi-comp-one-lighten1: rgb(221, 169, 235);
+  --color-addi-comp-one-base: rgb(195, 143, 208);
+  --color-addi-comp-one-darken1: rgb(168, 113, 189);
+  --color-addi-comp-one-darken2: rgb(139, 90, 163);
+  --color-addi-comp-one-darken3: rgb(105, 58, 132);
+  --color-addi-comp-one-darken4: rgb(70, 34, 102);
+  --color-addi-comp-one-darken5: rgb(41, 10, 76);
+  --color-addi-comp-two-lighten5: rgb(255, 253, 235);
+  --color-addi-comp-two-lighten4: rgb(255, 251, 214);
+  --color-addi-comp-two-lighten3: rgb(255, 245, 173);
+  --color-addi-comp-two-lighten2: rgb(255, 239, 138);
+  --color-addi-comp-two-lighten1: rgb(250, 223, 70);
+  --color-addi-comp-two-base: rgb(239, 200, 0);
+  --color-addi-comp-two-darken1: rgb(227, 185, 0);
+  --color-addi-comp-two-darken2: rgb(184, 141, 0);
+  --color-addi-comp-two-darken3: rgb(133, 99, 7);
+  --color-addi-comp-two-darken4: rgb(92, 63, 6);
+  --color-addi-comp-three-lighten5: rgb(235, 255, 239);
+  --color-addi-comp-three-lighten4: rgb(212, 252, 231);
+  --color-addi-comp-three-lighten3: rgb(166, 237, 199);
+  --color-addi-comp-three-lighten2: rgb(67, 224, 146);
+  --color-addi-comp-three-lighten1: rgb(0, 190, 122);
+  --color-addi-comp-three-base: rgb(1, 128, 82);
+  --color-addi-comp-three-darken1: rgb(9, 112, 75);
+  --color-addi-comp-three-darken2: rgb(11, 82, 56);
+  --color-addi-comp-three-darken3: rgb(20, 51, 40);
+  --color-addi-comp-three-darken4: rgb(12, 31, 24);
+  --color-addi-comp-four-lighten5: rgb(255, 242, 242);
+  --color-addi-comp-four-lighten4: rgb(255, 211, 209);
+  --color-addi-comp-four-lighten3: rgb(255, 167, 166);
+  --color-addi-comp-four-lighten2: rgb(250, 77, 75);
+  --color-addi-comp-four-lighten1: rgb(219, 44, 44);
+  --color-addi-comp-four-base: rgb(204, 31, 31);
+  --color-addi-comp-four-darken1: rgb(184, 22, 25);
+  --color-addi-comp-four-darken2: rgb(163, 23, 23);
+  --color-addi-comp-four-darken3: rgb(143, 24, 29);
+  --color-addi-comp-four-darken4: rgb(122, 24, 31);
+  --color-addi-comp-four-accent-lighten2: rgb(248, 186, 173);
+  --color-addi-comp-five-lighten4: rgb(235, 242, 255);
+  --color-addi-comp-five-lighten3: rgb(204, 221, 255);
+  --color-addi-comp-five-lighten2: rgb(133, 169, 255);
+  --color-addi-comp-five-lighten1: rgb(78, 126, 255);
+  --color-addi-comp-five-base: rgb(60, 106, 240);
+  --color-addi-comp-five-darken1: rgb(32, 79, 214);
+  --color-addi-comp-five-darken2: rgb(10, 57, 196);
+  --color-addi-comp-five-darken3: rgb(15, 53, 163);
+  --color-addi-comp-five-darken4: rgb(11, 35, 92);
+  --color-addi-comp-five-darken5: rgb(9, 26, 66);
+  --color-addi-gray-lighten5: rgb(255, 255, 255);
+  --color-addi-gray-lighten4: rgb(250, 250, 250);
+  --color-addi-gray-lighten3: rgb(235, 236, 237);
+  --color-addi-gray-lighten2: rgb(201, 205, 209);
+  --color-addi-gray-lighten1: rgb(116, 119, 122);
+  --color-addi-gray-base: rgb(77, 82, 92);
+  --color-addi-gray-darken1: rgb(51, 53, 61);
+  --color-addi-gray-darken2: rgb(38, 38, 46);
+  --color-addi-gray-darken3: rgb(24, 24, 31);
+  --color-addi-gray-darken4: rgb(7, 8, 10);
+  --color-addi-black: rgb(24, 24, 31);
+  --color-addi-white: rgb(255, 255, 255);
+}
+
+/* Fonts */
+
+:root {
+  --font-addi-family-primary-name: Mallory;
+  --font-addi-family-primary-url-regular: https://s3.amazonaws.com/statics.addi.com/fonts/mallory/Mallory_Book.ttf;
+  --font-addi-family-primary-url-italic: https://s3.amazonaws.com/statics.addi.com/fonts/mallory/Mallory_Book_Italic.ttf;
+  --font-addi-family-primary-url-bold: https://s3.amazonaws.com/statics.addi.com/fonts/mallory/Mallory_Bold.ttf;
+  --font-addi-family-primary-url-bold-italic: https://s3.amazonaws.com/statics.addi.com/fonts/mallory/Mallory_Bold_Italic.ttf;
+  --font-addi-family-secondary-name: Inter;
+  --font-addi-family-secondary-url-regular: https://s3.amazonaws.com/statics.addi.com/fonts/inter/Inter-Regular.ttf;
+  --font-addi-family-secondary-url-italic: https://s3.amazonaws.com/statics.addi.com/fonts/inter/Inter-Italic.woff2;
+  --font-addi-family-secondary-url-bold: https://s3.amazonaws.com/statics.addi.com/fonts/inter/Inter-Bold.ttf;
+  --font-addi-family-secondary-url-bold-italic: https://s3.amazonaws.com/statics.addi.com/fonts/inter/Inter-BoldItalic.woff2;
+  --font-addi-weight-thin: 100;
+  --font-addi-weight-extra-light: 200;
+  --font-addi-weight-light: 300;
+  --font-addi-weight-regular: 400;
+  --font-addi-weight-medium: 500;
+  --font-addi-weight-semi-bold: 600;
+  --font-addi-weight-bold: 700;
+  --font-addi-weight-extra-bold: 800;
+  --font-addi-weight-black: 900;
+  --font-addi-format-web-open-font-format: woff;
+  --font-addi-format-web-open-font-format2: woff2;
+  --font-addi-format-true-type: truetype;
+  --font-addi-format-open-type: opentype;
+  --font-addi-format-embedded-open-type: embedded-opentype;
+  --font-addi-format-svg: svg;
+}
+
+addi-widget > addi-banner > div.addi-banner-co {
+  /*padding: 5vh 0 10vh 0;*/
+  margin:12px 0;
+}
+
+.addi_description_container .container span {
+  color: black;
+}
+
+addi-widget > addi-banner > div.addi-banner-wrapper-co {
+  /*padding: 5vh 0 10vh 0;*/
+  margin:12px 0;
+}
+
+li.wc_payment_method.payment_method_addi > label[for=payment_method_addi] > img[alt="Paga a cuotas"] {
+margin-left: 6px;
+margin-top: -7px;
+max-height: 20px;
+}
+
+li.wc_payment_method.payment_method_addi > label[for=payment_method_addi] > img {
+  width: 65px;
+  height: 25px;
+}
+
+/*li.wc_payment_method.payment_method_addi > div.payment_box.payment_method_addi {
+border: 1px solid #C9CDD1;
+box-sizing: border-box;
+border-radius: 8px;
+}*/
+
+li.wc_payment_method.payment_method_addi > div.payment_box.payment_method_addi > div.desc_header {
+height: 50px;
+  border-bottom: 1px solid #C9CDD1;
+}
+
+/*.constraint-container {
+margin: 10px 0;
+}*/
+
+.constraint-container {
+font-size: 12px;
+padding: 6px 16px 6px 18px;
+border: 1px solid #FA4D4B;
+border-radius: 3px;
+background: #FFF2F2;
+}
+
+/*.constraint-label {
+font-size: 12px;
+background-color: #da565c;
+border-radius: 4px;
+padding: 3px;
+color: #fff;
+}*/
+
+.discount-container {
+/*margin: 10px 0;*/
+margin: 0 20px 10px;
+background: #00BE7A;
+border: 1px solid #00BE7A;
+box-sizing: border-box;
+border-radius: 16px;
+width: fit-content;
+}
+
+#payment .payment_methods li p.discount-label, .discount-label  {
+/*background-color: #6cba9b;*/
+border-radius: 16px;
+padding: 3px;
+font-weight: 600;
+font-size: 14px;
+color: #fff;
+margin: 0 20px 10px;
+}
+
+.discount-sub-container {
+margin: 0 20px 10px;
+}
+
+.discount-sub-label {
+color: #4D525C;
+font-size: 15px;
+font-style: italic;
+font-weight: normal;
+}
+
+.button-disabled {
+opacity: 0.3 !important;
+cursor:not-allowed !important;
+}
+
+/* BR temaplate styles */
+
+.woocommerce-checkout #order_review #payment ul.payment_methods div.payment_method_addi .addi-template-br
+.addi-description__container4x {
+  height: 100%;
+  background: var(--color-addi-gray-lighten4);
+  border: 1px solid #DCDCDC;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.addi-description {
+  width: 100%;
+  max-width: 450px;
+  background-color: var(--color-addi-background-white);
+  border: 1px solid var(--color-addi-gray-lighten3);
+  box-sizing: border-box;
+  margin: auto;
+
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addi-description .addi-rectangle {
+  width: 45px;
+  height: 155px;
+  background: var(--color-addi-comp-two-base);
+
+  position: absolute;
+  left: -10px;
+  top: 190px;
+
+  transform: rotate(42deg);
+  z-index: 1;
+}
+
+.addi-description .addi-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: var(--color-addi-comp-five-lighten1);
+
+  position: absolute;
+  right: 50px;
+  top: -25px;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.addi-description .addi-circle-outline {
+  width: 135px;
+  height: 135px;
+  border-radius: 100px;
+  border: 40px solid var(--color-addi-comp-one-base);
+  background-color: transparent;
+
+  position: absolute;
+  right: -67px;
+  bottom: 30px;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.addi-description .addi-description__container {
+  height: auto;
+  margin: 30px 35px 15px;
+  z-index: 2;
+}
+
+.addi-bottom-info__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-addi-comp-four-accent-lighten2);
+  z-index: 2;
+  padding: 16px 0;
+  width: 100%;
+}
+
+.addi-bottom-info__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-addi-background-white);
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  margin: 0 12px 0 0;
+}
+
+.addi-bottom-info__label {
+  font-family: 'Inter';
+  font-weight: var(--font-addi-weight-regular);
+  font-size: var(--size-addi-font-x-small);
+  line-height: 20px;
+  color: var(--color-addi-font-strong);
+  max-width: 70%;
+}
+
+@media screen and (max-width: 400px) {
+  .addi-description {
+      min-width: 200px;
+  }
+
+  .addi-description .addi-rectangle {
+      width: 30px;
+      height: 95px;
+  }
+
+  .addi-description .addi-circle {
+      width: 90px;
+      height: 90px;
+      right: -50px;
+      top: -50px;
+  }
+
+  .addi-description .addi-description__container {
+      margin: 30px 10px 15px;
+  }
+
+  .addi-bottom-info__container {
+      flex-direction: column-reverse;
+  }
+
+  .addi-bottom-info__icon {
+      margin: 12px 0 0;
+  }
+
+  .addi-bottom-info__label {
+      font-size: var(--size-addi-font-xx-small);
+      line-height: 14px;
+      max-width: 85%;
+      text-align: center;
+  }
+}
+
+/*-----------------------------
+  Components
+-----------------------------*/
+
+/* Header */
+
+.addi-header {
+  font-family: 'Mallory';
+  margin-bottom: 16px;
+}
+
+.addi-header .addi-header__logo {
+  text-align: center;
+}
+
+.addi-header .addi-header__title {
+  text-align: center;
+  color: var(--color-addi-comp-five-darken5);
+  font-size: var(--size-addi-font-large);
+  font-weight: var(--font-addi-weight-bold);
+  line-height: 26px;
+  margin-top: 15px;
+}
+
+.addi-header .addi-header__subtitle {
+  text-align: center;
+  color: var(--color-addi-font-secondary);
+  font-size: var(--size-addi-font-small);
+  font-weight: var(--font-addi-weight-bold);
+  line-height: 20px;
+  margin-top: 15px;
+}
+
+.addi-header .addi-header__discount {
+  display: flex;
+  color: #000;
+  font-size: var(--size-addi-font-small);
+  font-weight: var(--font-addi-weight-bold);
+  margin-top: 5px;
+  justify-content: center;
+}
+
+.addi-header .addi-header__discount .addi-header__discount-icon {
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+@media screen and (max-width: 400px) {
+  .addi-header {
+      margin-bottom: 10px;
+  }
+
+  .addi-header .addi-header__title .addi-header__addi-logo {
+      width: 40px;
+      margin-left: 5px;
+      margin-top: -1px;
+  }
+
+  .addi-header .addi-header__discount {
+      font-size: var(--size-addi-font-x-small);
+  }
+}
+
+/* Instructions */
+
+.addi-instructions {
+  display: flex;
+  flex-direction: column;
+}
+
+.addi-instructions__card {
+  display: flex;
+  background-color: var(--color-addi-background-white);
+  border: 1px solid var(--color-addi-gray-lighten3);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.addi-instructions__card:not(:first-child) {
+  margin-top: 12px;
+}
+
+.addi-instructions__icon {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.addi-instructions-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.addi-instructions-info__title {
+  font-family: 'Mallory';
+  font-weight: var(--font-addi-weight-bold);
+  font-size: var(--size-addi-font-small);
+  line-height: 20px;
+  color: var(--color-addi-font-secondary);
+  margin-bottom: 6px;
+}
+
+.addi-instructions-info__label {
+  font-family: 'Inter';
+  font-weight: var(--font-addi-weight-regular);
+  font-size: var(--size-addi-font-xx-small);
+  line-height: 15px;
+  color: var(--color-addi-font-strong);
+}
+
+.addi-instructions-info__label--highlight {
+  color: var(--color-addi-comp-three-lighten1);
+}
+
+@media screen and (max-width: 400px) {
+  .addi-instructions-info__title {
+      font-size: var(--size-addi-font-x-small);
+      line-height: 16px;
+      margin-bottom: 2px;
+  }
+}
+
+/* Discount */
+
+.addi-header-discount {
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.addi-header-discount.--4x {
+  justify-content: flex-start;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.addi-header-discount .addi-header-discount__badge {
+  display: flex;
+  align-items: center;
+  background: var(--color-addi-feedback-success);
+  border-radius: 50px;
+  padding: 5px 15px;
+}
+
+.addi-header-discount .addi-header-discount__icon {
+  margin-right: 10px;
+}
+
+.addi-header-discount .addi-header-discount__label {
+  color: var(--color-addi-font-over-dark);
+  font-size: var(--size-addi-font-x-small);
+  font-weight: var(--font-addi-weight-bold);
+}
+
+
+
+
+.addi-description-info {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.addi-description-info__logo {
+  /* padding-right: 12px; */
+  height: 24px;
+}
+
+.addi-description-info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 12px;
+}
+
+.addi-description-info-text::before {
+  position: absolute;
+  content: '';
+  height: 7%;
+  width: 1px;
+  background-color: #000000;
+}
+
+.addi-description-info-text-wepink {
+  border-left: 1px solid var(--color-addi-comp-four-accent-lighten2);
+}
+
+
+.addi-description-info-text__label4x {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  color: #18181F;
+  font-size: 12px;
+  line-height: 136%;
+  letter-spacing: 0.01em;
+  margin-left: 14px !important;
+  margin-bottom: 0;
+}
+
+.addi-title__strong {
+  font-family: 'Inter';
+  color: #18181F;
+  size: 14px;
+  line-height: 17px;
+}
+
+.addi-step-parcelas {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.addi-step__container {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  width: auto;
+  min-height: 37px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+
+.addi-step__container:first-child {
+  border: 1px solid #CCDDFF;
+}
+
+.addi-step__container.selector {
+  border: none;
+}
+
+.addi-step {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.addi-step-active__number, .addi-step-inactive__number {
+  font-family: 'Mallory';
+  font-style: normal;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 15px;
+  /* margin: 0 8px 8px 0; */
+  width: 25px;
+  height: 22px;
+  line-height: 120%;
+  text-align: center;
+  margin: 0;
+  background-size: 100% auto;
+  padding: 2px;
+  color: #000000;
+}
+
+.addi-step-active__number {
+  /*background: var(--color-addi-primary-active);*/
+  background-image: url("steps/one.svg")
+}
+
+.addi-step-inactive__number.two {
+  background-image: url("steps/two.svg")
+}
+
+.addi-step-inactive__number.three {
+  background-image: url("steps/three.svg")
+}
+
+.addi-step-inactive__number.four {
+  background-image: url("steps/four.svg")
+}
+
+.addi-step-active__number-wepink {
+  background: var(--color-addi-comp-four-accent-lighten2);
+  color: var(--color-addi-comp-four-lighten5);
+}
+
+.addi-step-inactive__number {
+  /*background: var(--color-addi-comp-five-lighten4);*/
+  /*color: var(--color-addi-comp-five-lighten1);*/
+}
+
+.addi-step-inactive__number-wepink {
+  background: var(--color-addi-comp-four-lighten5);
+  color: var(--color-addi-comp-four-accent-lighten2);
+}
+
+.addi-step-active__name, .addi-step-inactive__name {
+  font-family: 'Inter';
+  line-height: 15px;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+.addi-step-active__name {
+  font-weight: 600;
+  color: var(--color-addi-font-primary);
+  margin-left: 8px !important;
+  margin-top: 4px !important;
+}
+
+.addi-step-inactive__name {
+  font-weight: 400;
+  color: var(--color-addi-font-secondary);
+  margin-left: 8px !important;
+  margin-top: 4px !important;
+}
+
+.addi-step__price {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--color-addi-font-primary);
+  margin: 0;
+}
+
+.addi-info-message {
+  font-family: 'Inter';
+  color: var(--color-addi-primary-active);
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  padding: 12px 0 17px 0;
+}
+
+.addi-internal-message {
+  padding: 12px 0 0 0
+}
+
+.addi-description__container4x {
+  height: 100%;
+  background: var(--color-addi-gray-lighten4);
+  border: 1px solid #DCDCDC;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+@media screen and (min-width: 760px) {
+  .addi-description .addi-description__container4x {
+      max-width: 750px;
+  }
+
+  .addi-step-parcelas {
+      /* flex-direction: row; */
+  }
+
+  .addi-step {
+      /* width: auto; */
+      /* flex-direction: column; */
+  }
+
+  .addi-step__container {
+      padding: 0 6px;
+      /* align-items: start; */
+      /* flex-wrap: wrap; */
+  }
+}
+
+.addi-payment__container {
+  padding: 8px;
+  background: var(--color-addi-background-white);
+  border: 1px solid var(--color-addi-gray-lighten2);
+  border-radius: 4px;
+  margin: 8px 0
+}
+
+.addi-payment-price {
+  font-family: 'Mallory';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: var(--color-addi-font-primary);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 6px 0 !important;
+}
+
+.addi-payment__description {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 148%;
+  color: var(--color-addi-font-secondary);
+}
+
+.addi-payment__badge {
+  display: flex;
+  align-items: center;
+  background: var(--color-addi-comp-three-lighten5);
+  border-radius: 4px;
+  padding: 2px 8px;
+  height: min-content;
+}
+
+.addi-payment__label {
+  color: var(--color-addi-comp-three-base);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.addi-payment__header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 15px
+}
+
+p
+
+.addi-description__paragraph {
+  margin-top: 15px !important;
+  font-size: 14px;
+}
+
+.addi-payment__badge {
+  display: flex;
+  align-items: center;
+  background: var(--color-addi-comp-three-lighten5);
+  border-radius: 4px;
+  padding: 2px 8px;
+  height: min-content;
+}
+
+/*Colombia styles*/
+
+.addi-co-description-block {
+  border-radius: 8px;
+  border: 1px solid #EBECED;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: white;
+  display: inline-flex;
+}
+
+.addi-co-description-block.with-margin {
+  margin-top: 10px;
+}
+
+.addi-co-description-header {
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 15px;
+}
+
+.addi-co-description-detail {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.addi-co-subtitle {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 148%;
+  color: #727272 !important;
+}
+.addi-co-subtitle a {
+   color: #3C6AF0;
+   text-decoration: none !important;
+ }
+
+.addi_description_container.flex {
+  background-color: white;
+  border: 1px solid #DCDCDC;
+  border-radius: 8px;
+  min-width: 260px;
+}
+
+/* Addi flex */
+.flex-header, .bnpl-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-header .logo, .bnpl-header .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.flex-header .logo img {
+  width: 78px;
+  height: 28px;
+}
+
+.bnpl-header .logo img{
+  margin-bottom: 11px;
+  width: 100%;
+  max-height: none !important;
+  max-width: 270px;
+}
+
+.flex-header .title {
+  font-family: 'Mallory';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 124%;
+  letter-spacing: -0.01em;
+  color: #18181F;
+  margin-bottom: 10px;
+}
+
+.addi-co-description-block.flex {
+  border-radius: 0;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 148%;
+  padding-left: 0;
+}
+
+.addi-co-description-block.flex img {
+  margin-right: 10px;
+}
+
+.addi-co-description-footer {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 148%;
+  color: #4D525C;
+}
+
+.discount-container-flex {
+  align-items: center;
+  padding: 4px 8px;
+  width: 125px;
+  height: 22px;
+  right: 15.5px;
+  top: 24px;
+  background: #EBFFEF;
+  border-radius: 4px;
+}
+
+.discount-container-flex .discount-label-flex {
+  font-family: 'Inter';
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 120%;
+  color: #018052;
+}
+
+.constraint-container-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  gap: 10px;
+  background: #FFF2F2;
+  border: 1px solid #FA4D4B;
+  border-radius: 4px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 148%;
+  color: #4D525C;
+}
+
+/* Widget*/
+
+.addi-banner-co-info__addi-logo, .addi-banner-br-info__addi-logo  {
+  max-width: 30px !important;
+}
+
+/* Addi-flex */
+
+.addi-description__container-flex {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+  background-color: #fafafa;
+}
+
+.addi-description__logo-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addi-description-info-flex {
+  display: flex;
+  align-items: center;
+}
+
+.addi-description__plus {
+  padding: 0 6px;
+  color: var(--color-addi-font-action);
+}
+
+.addi-description-info__logo-flex {
+  margin-top: 5px;
+}
+
+.addi-description-safebuy {
+  display: flex;
+  align-items: center;
+}
+
+.addi-description__logo-sub-flex {
+  color: #00be7a;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 136%;
+  letter-spacing: 0.01em;
+  margin-left: 3px;
+}
+
+.addi-description__paragraph-flex {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 148%;
+  color: var(--color-addi-font-secondary);
+}
+
+.addi-title__p-flex {
+  margin-top: 12px !important;
+}
+
+.addi-container__box-flex {
+  background-color: #fff;
+  margin: 8px 0 8px;
+  border-radius: 4px;
+  padding: 8px 14px;
+  border: 1px solid #ebeced;
+}
+
+.addi-title__primary-bold-flex {
+  font-family: 'Mallory';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: var(--color-addi-gray-darken3);
+}
+
+.addi-internal-sub__p-flex {
+  margin: 16px 0 16px 0;
+}
+
+.addi-step__container-flex {
+  display: flex;
+  font-family: 'Inter';
+  font-weight: 400;
+  margin: 12px;
+  align-items: center;
+}
+
+.addi-description__paragraph-flex {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 148%;
+  color: #4d525c;
+  font-family: 'Inter';
+  margin: 0;
+}
+
+.addi-title__strong-flex {
+  font-family: 'Inter';
+  color: var(--color-addi-font-primary);
+  font-weight: 700;
+  line-height: 148%;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.addi-step__container-flex-pix {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.addi-description__finish-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.addi-step-inactive__number-flex {
+  background: var(--color-addi-comp-five-lighten4);
+  color: var(--color-addi-comp-five-lighten1);
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}

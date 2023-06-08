@@ -1,0 +1,261 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+:is(.btn,.button,button,[type="submit"],[type="button"]) {
+    padding: 5px 20px;
+    min-height: var(--btn-height);
+    font-size: 13px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: 1px solid #f1a693;
+}
+
+.colornegroformactualizacion {
+	color:#000000 !important;
+}
+
+.title-size-large {
+    padding: 200px 0;
+}
+
+.botonesfondo{
+	background-color:#ffffff !important;
+}
+
+.text-bold-subtitle-black{
+	font-weight: bold !important;
+}
+ul.list-details-footer {
+    display: none;
+}
+
+div.parrafo h4 {
+    text-align: justify;
+}
+
+div#sliderJuernes {
+    margin-top: -40px;
+}
+
+.iconic-wsb-checkout-bump__price span.woocommerce-Price-amount.amount:before{
+	display: none !important
+}
+
+.btn-ingredientes-naturales-inicio {
+    margin-left: 5vh;
+}
+.wd-side-hidden {
+    z-index: 9999;
+}
+.wa__btn_popup {
+    right: 20px;
+    bottom: 80px;
+}
+
+div#colAddi {
+    background: #6d6cfd;
+    max-height: 80px;
+}
+div.title-col-addi {
+    padding-top: 23px;
+}
+
+li.meta-author span.fn {
+    font-size: 0;
+}
+li.meta-author span.fn:before {
+    content: "Natural Conexion";
+    font-size: 1rem;
+}
+.img-popup-suscrip {
+    height: 350px;
+}
+.img-popup-suscrip img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* estilos modal subscribe */
+.content-subscribe {
+    text-align: center;
+}
+.content-subscribe h4.woodmart-title-container {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.banner-shop-natural{
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+#wd-623de5e6a6212 .wpb_single_image img{
+  max-width: 140% !important;
+}
+.wpb_single_image img{
+  max-width: 114% !important;
+}
+
+#wd-624216ad428b4 .woodmart-timeline-dot{
+  background-color: #378030 !important;
+}
+.wrapp-category .hover-mask{
+  display:none !important
+}
+
+.area-sidebar-shop .widget_categories{
+  display:none !important
+}
+.sidebar-right.area-sidebar-1 #woocommerce_product_categories-2{
+  display:none !important
+}
+
+.list-menu-footer {
+	display: flex;
+	justify-content: center;
+	padding-top: 4rem;
+}
+
+.list-menu-footer-nuevo-diseno {
+	display: flex;
+	justify-content: center;
+	
+}
+
+
+
+.text-nuestros-origenes{
+	font-size: 1.1rem;
+	text-align: justify;
+}
+
+/*.post-22023 .vc_column-inner{
+  background-image: url(/wp-content/uploads/2022/10/favio-fondo-scaled.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem;	
+}*/
+
+/**************************  
+	Estilos para movil  
+***************************/
+@media (max-width:767px)  and (min-width:320px){
+	
+	.title-shop .entry-title.title{
+		display:block !important;
+		margin-bottom: 24px !important;
+	}
+	.title-shop .wd-btn-show-cat{
+		display:none !important;
+	}
+	.page-title.title-shop {
+    padding: 26px 0 !important;
+	background-size: contain !important;
+    background-repeat: repeat-x !important;
+ }
+	.text-nuestros-origenes{
+		font-size: 1rem;
+	}
+
+	  .title-landing h4 {
+		font-size: 2.2rem !important;
+	  }
+	  .title2-landing h1 {
+		font-size: 1rem !important;
+	  }
+	.list-menu-footer {
+		justify-content: left;
+		padding-top: 0;
+	}
+	
+	.page-id-7096 .row{
+		margin-top: -1rem !important;
+	}
+	#rev_slider_88_4_forcefullwidth{
+		margin-bottom: -5rem !important;
+	}
+	#rev_slider_88_4_wrapper{
+		margin-top: -1rem !important;
+	}
+	
+	.page-title.title-blog {
+    	padding: 64px 0px !important;
+	 	background-size: contain !important;
+    	background-repeat: no-repeat !important;
+ 	}
+}
+ 
+.cat-item .count{
+	display: none !important
+}
+.input-contact{
+	width: 100% !important
+}
+.wd-rs-643324906dcef{
+	background-color:#fafafa !important
+}
+
+@media (min-width: 992px) { 
+	.ocultarescritorio{display:none}
+}
+@media (max-width: 992px) { 
+	.ocultarmobile{display:none}
+}
+
+.title-blog .entry-title.title{
+	display: none !important;
+}
+
+#menu-item-24532 .woodmart-nav-link{
+	background-color: rgba(241, 166, 147, 1) !important;
+    color: #ffffff !important;
+    border-radius: 12px !important;
+    padding: 8px !important;
+}
+
+#menu-item-24532 .woodmart-nav-link:hover{
+	background-color: rgba(241, 166, 147, 1) !important;
+	 border-radius: 20px !important;
+	 padding: 8px !important;
+	transition: 1s;
+}
+.wd-nav-product-cat{
+	display: none !important
+}
+
+
+@media (min-width: 1025px){
+ .page-title.title-shop {
+    padding: 139px 0 !important;
+	 background-size: contain !important;
+    background-repeat: repeat-x !important;
+ }
+	.page-title.title-shop .container>* {
+    margin-bottom: 40px !important;
+}
+}
+
+@media (min-width: 1025px){
+	
+	.page-title.title-blog {
+    	padding: 226px 0px;
+	 	background-size: contain !important;
+    	background-repeat: no-repeat !important;
+ 	}
+
+}
+
+
+.js-marquee{
+	font-size: 1rem !important;
+    font-weight: 700 !important;
+}
+
+/******************************  
+	Estilos para escritrio 
+*******************************
+@media (min-width: 992px) { }*/</style>
+<!-- end Simple Custom CSS and JS -->

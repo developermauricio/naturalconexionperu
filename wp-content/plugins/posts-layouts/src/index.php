@@ -1,0 +1,1 @@
+																																																																																																																										<?php // Security by CleanTalk: Malware was deleted: #1748
