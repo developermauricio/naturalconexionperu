@@ -59,7 +59,7 @@
 --wd-header-el-font-size:13px;
 }
 :root{
---wd-primary-color:#83b735;
+--wd-primary-color:rgb(241,166,147);
 }
 :root{
 --wd-alternative-color:#fbbc34;
@@ -75,10 +75,10 @@
 --btn-default-bgcolor-hover:#efefef;
 }
 :root{
---btn-accented-bgcolor:#83b735;
+--btn-accented-bgcolor:rgb(247,247,247);
 }
 :root{
---btn-accented-bgcolor-hover:#74a32f;
+--btn-accented-bgcolor-hover:rgb(234,158,143);
 }
 :root{
 --notices-success-bg:#459647;
@@ -103,9 +103,9 @@
 		
 					--btn-default-color-hover: #333;
 		
-					--btn-accented-color: #fff;
+					--btn-accented-color: #333;
 		
-					--btn-accented-color-hover: #fff;
+					--btn-accented-color-hover: #333;
 		
 									--btn-default-brd-radius: 0px;
 				--btn-default-box-shadow: none;
@@ -116,11 +116,12 @@
 			
 			
 					
-					
-							--btn-accented-bottom-active: -1px;
-				--btn-accented-brd-radius: 0px;
-				--btn-accented-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .15);
-				--btn-accented-box-shadow-hover: inset 0 -2px 0 rgba(0, 0, 0, .15);
+									--btn-accented-brd-radius: 0px;
+				--btn-accented-box-shadow: none;
+				--btn-accented-box-shadow-hover: none;
+				--btn-accented-box-shadow-active: none;
+				--btn-accented-bottom: 0px;
+			
 			
 			
 					

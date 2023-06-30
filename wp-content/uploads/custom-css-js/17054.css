@@ -248,7 +248,9 @@ li.meta-author span.fn:before {
 
 }
 
-
+#pre-footer-payments{
+	display: none !important;
+}
 .js-marquee{
 	font-size: 1rem !important;
     font-weight: 700 !important;
